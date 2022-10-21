@@ -1,6 +1,6 @@
 # Face-Detection-with-Landmarks-Gender-and-Emotion-Recognition
-Build with JavaScript’s API face-api.js
 
+We aimed at implementing JavaScript's API face-api.js is a web application that has been deployed locally. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
 
 https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
 
