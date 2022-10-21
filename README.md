@@ -6,8 +6,7 @@ Build with JavaScript’s API face-api.js
 
 ## The project
 
-https://user-images.githubusercontent.com/80494835/197191026-dfc65b8c-565f-4840-ad92-b15a0794c974.mp4
-
+https://user-images.githubusercontent.com/80494835/197191128-e216f174-c9ec-4ced-a632-12fb0a9e1736.mp4
 
 
 
