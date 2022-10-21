@@ -8,7 +8,7 @@ Build with JavaScript’s API face-api.js
 
 
 <video width="320" height="240" controls>
-  <source src="video.mov" type="video/mp4">
+  <source src="Screen-2022-10-21-141556.mp4" type="video/mp4">
 </video>
 
 
