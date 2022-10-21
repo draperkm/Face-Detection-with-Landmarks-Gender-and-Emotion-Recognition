@@ -8,7 +8,7 @@ Build with JavaScript’s API face-api.js
 
 
 <video width="320" height="240" controls>
-  <source src="/Face_Detection_and_Landmarks_Gender_Emotion_Recognition/Screen-2022-10-21-141556.mp4">
+  <source src="https://github.com/draperkm/Face_Detection_and_Landmarks_Gender_Emotion_Recognition/blob/main/Screen-2022-10-21-141556.mp4">
 </video>
 
 
