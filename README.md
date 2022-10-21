@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-
 
 
 
-## Writing code - Solving issues
+## Some challenges
 
 ### Accessing Your Webcam in HTML
 
@@ -28,7 +28,7 @@ https://github.com/justadudewhohacks/face-api.js/issues/735
 
 ## API's capabilities
 
-### Multiple faces recognition
+### Multiple faces detection
 
 
 
@@ -37,6 +37,7 @@ https://github.com/justadudewhohacks/face-api.js/issues/735
 
 
 ### Face expressions
+
 
 
 ### High level API
@@ -61,7 +62,7 @@ console.log(faceapi.nets)
 
 
 
-## Try it
+## Use it
 
 
 
