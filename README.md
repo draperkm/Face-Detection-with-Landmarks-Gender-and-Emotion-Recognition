@@ -7,13 +7,11 @@ Build with JavaScript’s API face-api.js
 
 
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/draperkm/Face_Detection_and_Landmarks_Gender_Emotion_Recognition/blob/main/Screen-2022-10-21-141556.mp4">
-</video>
-
-
-
 ## Features
+
+
+
+https://user-images.githubusercontent.com/80494835/197228796-c91dca68-8cca-4a98-9db5-960d03a82fd9.mp4
 
 
 ```
