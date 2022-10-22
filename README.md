@@ -143,16 +143,19 @@ video.play();
 
 ## Try it
 
+Download the repository ``
 
+### Running the Browser Examples
 
-
-
+- Open the terminal
+- Browse to the downloaded repository
+- Run the command `caddy file-server --browse --listen :8080`
 
 
 # References
 
 - https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
-- Some error handling: https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
+- https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
 - https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser-with-tensorflow-js-bcc2a6c4cf07
 - https://developers.google.com/ml-kit/vision/face-detection?hl=en
 
