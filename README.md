@@ -141,13 +141,15 @@ video.play();
 
 ## Try it
 
-Download the repository ``
+Download this repository
 
 ### Running the Browser Examples
 
 - Open the terminal
-- Browse to the downloaded repository
+- Go to the downloaded repository
 - Run the command `caddy file-server --browse --listen :8080`
+
+Browse to http://localhost:8080/.
 
 
 # References
