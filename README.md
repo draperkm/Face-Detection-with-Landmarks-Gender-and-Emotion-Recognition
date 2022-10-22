@@ -1,6 +1,6 @@
 # Face Detection with Landmarks and Emotion Recognition
 
-I aimed at implementing JavaScript's API `face-api.js`, as a web application. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
+I aimed at implementing JavaScript's API `face-api.js` in the browser. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
 
 - **Face detection** Get the contours of detected faces and their eyes, eyebrows, lips, and nose.
 - **Face landmarks recognition** Get the coordinates of the eyes, ears, cheeks, nose, and mouth of every face detected.
@@ -10,7 +10,16 @@ I aimed at implementing JavaScript's API `face-api.js`, as a web application. Th
 
 https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
 
+## API's capabilities: building the canvas function
 
+### Multiple faces detection
+
+
+
+### Face Landmarks
+
+
+### Face expressions
 
 ## Some challenges
 
@@ -87,22 +96,6 @@ https://github.com/WebDevSimplified/Face-Detection-JavaScript/issues/8
 https://github.com/justadudewhohacks/face-api.js/issues/735
 
 
-
-## API's capabilities: building the canvas function
-
-### Multiple faces detection
-
-
-
-### Face Landmarks
-
-
-### Face expressions
-
-
-
-
-
 ## Try it
 
 
@@ -115,6 +108,6 @@ https://github.com/justadudewhohacks/face-api.js/issues/735
 
 - https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
 - Some error handling: https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
-
+- https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser-with-tensorflow-js-bcc2a6c4cf07
 - https://developers.google.com/ml-kit/vision/face-detection?hl=en
 
