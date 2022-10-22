@@ -12,14 +12,38 @@ https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-
 
 ## API's capabilities: building the canvas function
 
-### Multiple faces detection
+
+
+### Face detection
+
+The most accurate face detector is a SSD (Single Shot Multibox Detector), which is basically a CNN based on MobileNet V1, with some additional box prediction layers stacked on top of the network.
+
+Furthmore, face-api.js implements an optimized Tiny Face Detector, basically an even tinier version of Tiny Yolo v2 utilizing depthwise seperable convolutions instead of regular convolutions, which is a much faster, but slightly less accurate face detector compared to SSD MobileNet V1.
+
+The networks return the bounding boxes of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
 
 
 
 ### Face Landmarks
 
+For that purpose face-api.js implements a simple CNN, which returns the 68 point face landmarks of a given face image:
 
 ### Face expressions
+
+
+## Implementation
+
+### Including the Script
+
+First of all, get the latest build from dist/face-api.js or the minifed version from dist/face-api.min.js and include the script:
+
+```html
+<script src="face-api.js"></script>
+```
+
+### Loading the Model Data
+
+
 
 ## Some challenges
 
