@@ -10,9 +10,7 @@ I aimed at implementing JavaScript's API `face-api.js` in the browser. This API 
 
 https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
 
-## API's capabilities: building the canvas function
-
-
+## APIs' capabilities
 
 ### Face detection
 
@@ -23,12 +21,14 @@ Furthmore, face-api.js implements an optimized Tiny Face Detector, basically an 
 The networks return the bounding boxes of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
 
 
-
 ### Face Landmarks
 
 For that purpose face-api.js implements a simple CNN, which returns the 68 point face landmarks of a given face image:
 
 ### Face expressions
+
+The face expression recognition model is lightweight, fast and provides reasonable accuracy. The model has a size of roughly 310kb and it employs depthwise separable convolutions and densely connected blocks. It has been trained on a variety of images from publicly available datasets as well as images scraped from the web. Note, that wearing glasses might decrease the accuracy of the prediction results.
+
 
 
 ## Implementation
@@ -43,7 +43,39 @@ First of all, get the latest build from dist/face-api.js or the minifed version 
 
 ### Loading the Model Data
 
+Depending on the requirements of your application you can specifically load the models you need, but to run a full end to end example we will need to load the face detection, face landmark and face recognition model. The model files can simply be provided as static assets in your web app or you can host them somewhere else and they can be loaded by specifying the route or url to the files. Let’s say you are providing them in a models directory along with your assets under public/models
 
+```javascript
+faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+faceapi.nets.faceExpressionNet.loadFromUri('/models')
+```
+### Making predictions
+
+The neural nets accept HTML image, canvas or video elements or tensors as inputs.
+
+```javascript
+const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
+```
+
+### Displaying Detection Results
+
+Preparing the overlay canvas:
+
+```javascript
+const canvas = faceapi.createCanvas(video)
+    document.body.append(canvas)
+    const displaySize = {width: video.width, height: video.height}
+    faceapi.matchDimensions(canvas, displaySize)
+```
+
+face-api.js predefines some highlevel drawing functions, which you can utilize:
+
+```javascript
+faceapi.draw.drawDetections(canvas, resizedDetections)
+faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
+faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+```
 
 ## Some challenges
 
