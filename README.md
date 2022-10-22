@@ -21,15 +21,21 @@ Furthmore, face-api.js implements an optimized Tiny Face Detector, basically an 
 The networks return the bounding boxes of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
 
 
+<img width="400" alt="Screenshot 2022-10-22 at 15 41 23" src="https://user-images.githubusercontent.com/80494835/197345637-ca5195f0-dbd0-45b3-a9a1-9e8572795712.png"><img width="400" alt="Screenshot 2022-10-22 at 15 55 19" src="https://user-images.githubusercontent.com/80494835/197346023-271eb8e9-f4fe-4cee-b042-b4de104c8d58.png">
+
+
 ### Face Landmarks
 
 For that purpose face-api.js implements a simple CNN, which returns the 68 point face landmarks of a given face image:
+
+<img width="400" alt="Screenshot 2022-10-22 at 15 36 29" src="https://user-images.githubusercontent.com/80494835/197346091-a0d0255f-a2fc-4e5f-8e13-585d340fec7a.png"><img width="400" alt="Screenshot 2022-10-22 at 15 36 08" src="https://user-images.githubusercontent.com/80494835/197346099-703c6b0a-f7c7-4be9-80ef-add91cd95f79.png">
+
 
 ### Face expressions
 
 The face expression recognition model is lightweight, fast and provides reasonable accuracy. The model has a size of roughly 310kb and it employs depthwise separable convolutions and densely connected blocks. It has been trained on a variety of images from publicly available datasets as well as images scraped from the web. Note, that wearing glasses might decrease the accuracy of the prediction results.
 
-
+<img width="400" alt="Screenshot 2022-10-22 " src="https://user-images.githubusercontent.com/80494835/197346285-6b1b0a43-b687-4894-bc4f-c80e4796a272.png">
 
 ## Implementation
 
