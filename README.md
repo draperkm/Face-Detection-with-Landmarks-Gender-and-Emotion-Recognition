@@ -2,11 +2,11 @@
 
 I aimed at implementing JavaScript's API `face-api.js` in the browser. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
 
-- **Face detection** Get the contours of detected faces and their eyes, eyebrows, lips, and nose.
-- **Face landmarks recognition** Get the coordinates of the eyes, ears, cheeks, nose, and mouth of every face detected.
-- **Emotion recognition** Determine whether a person is smiling or has their eyes closed.
-- **Track faces across video frames** Get an identifier for each unique detected face. The identifier is consistent across invocations, so you can perform image manipulation on a particular person in a video stream
-- **Process video frames in real time** Face detection is performed on the device, and is fast enough to be used in real-time applications, such as video manipulation.
+- **Face detection** Gives a bounding box for every face detected.
+- **Face landmarks recognition** Gets the coordinates of the eyes, ears, cheeks, nose, and mouth of every face detected.
+- **Emotion recognition** Determine whether a person is happy - sad - angry - disgusted - fearful - surprised.
+- **Track faces across video frames** Get an identifier for each unique detected face. The identifier is consistent across invocations.
+- **Process video frames in real time** Face detection is performed on the device, and is fast enough to be used in real-time applications.
 
 https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
 
@@ -14,12 +14,7 @@ https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-
 
 ### Face detection
 
-The most accurate face detector is a SSD (Single Shot Multibox Detector), which is basically a CNN based on MobileNet V1, with some additional box prediction layers stacked on top of the network.
-
-Furthmore, face-api.js implements an optimized Tiny Face Detector, basically an even tinier version of Tiny Yolo v2 utilizing depthwise seperable convolutions instead of regular convolutions, which is a much faster, but slightly less accurate face detector compared to SSD MobileNet V1.
-
-The networks return the bounding boxes of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
-
+The most accurate face detector is a **SSD (Single Shot Multibox Detector)**, which is basically a CNN based on **MobileNet V1**, with some additional box prediction layers stacked on top of the network. Furthmore, face-api.js implements an optimized **Tiny Face Detector**, basically an even tinier version of **Tiny Yolo v2** utilizing depthwise seperable convolutions instead of regular convolutions, which is a much faster, but slightly less accurate face detector compared to SSD MobileNet V1. The networks return the **bounding boxes** of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
 
 <img width="400" alt="Screenshot 2022-10-22 at 15 41 23" src="https://user-images.githubusercontent.com/80494835/197345637-ca5195f0-dbd0-45b3-a9a1-9e8572795712.png">
 
