@@ -141,17 +141,6 @@ video.srcObject=stream;
 video.play();
 ```
 
-### Uncaught Reference Error: faceapi is not defined
-
-https://stackoverflow.com/questions/71617220/uncaught-reference-error-faceapi-is-not-defined
-
-https://github.com/WebDevSimplified/Face-Detection-JavaScript/issues/8
-
-### Uncaught TypeError: Cannot read property 'loadFromUri' of undefined 
-
-https://github.com/justadudewhohacks/face-api.js/issues/735
-
-
 ## Try it
 
 
