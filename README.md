@@ -2,6 +2,12 @@
 
 I aimed at implementing JavaScript's API `face-api.js`, as a web application. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
 
+- **Face detection** Get the contours of detected faces and their eyes, eyebrows, lips, and nose.
+- **Face landmarks recognition** Get the coordinates of the eyes, ears, cheeks, nose, and mouth of every face detected.
+- **Emotion recognition** Determine whether a person is smiling or has their eyes closed.
+- **Track faces across video frames** Get an identifier for each unique detected face. The identifier is consistent across invocations, so you can perform image manipulation on a particular person in a video stream
+- **Process video frames in real time** Face detection is performed on the device, and is fast enough to be used in real-time applications, such as video manipulation.
+
 https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
 
 
@@ -9,8 +15,6 @@ https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-
 ## Some challenges
 
 ### Accessing Your Webcam in HTML
-
-https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
 
 We can communicate with our webcam and access its video stream from our browser with just some JavaScript code. We only need a browser that supports the `getUserMedia` function.
 
@@ -72,9 +76,6 @@ video.srcObject=stream;
 video.play();
 ```
 
-
-https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
-
 ### Uncaught Reference Error: faceapi is not defined
 
 https://stackoverflow.com/questions/71617220/uncaught-reference-error-faceapi-is-not-defined
@@ -87,10 +88,9 @@ https://github.com/justadudewhohacks/face-api.js/issues/735
 
 
 
-## API's capabilities
+## API's capabilities: building the canvas function
 
 ### Multiple faces detection
-
 
 
 
@@ -101,29 +101,20 @@ https://github.com/justadudewhohacks/face-api.js/issues/735
 
 
 
-### High level API
-
-https://github.com/justadudewhohacks/face-api.js#getting-started-loading-models
-
-
-```
-console.log(faceapi.nets)
-// ageGenderNet
-// faceExpressionNet
-// faceLandmark68Net
-// faceLandmark68TinyNet
-// faceRecognitionNet
-// ssdMobilenetv1
-// tinyFaceDetector
-// tinyYolov2
-```
-
-
-
-
 
 
 ## Try it
 
 
+
+
+
+
+
+# References
+
+- https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm
+- Some error handling: https://stackoverflow.com/questions/27120757/failed-to-execute-createobjecturl-on-url
+
+- https://developers.google.com/ml-kit/vision/face-detection?hl=en
 
