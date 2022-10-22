@@ -8,8 +8,6 @@ I aimed at implementing JavaScript's API `face-api.js` in the browser. This API 
 - **Track faces across video frames** Get an identifier for each unique detected face. The identifier is consistent across invocations.
 - **Process video frames in real time** Face detection is performed on the device, and is fast enough to be used in real-time applications.
 
-https://user-images.githubusercontent.com/80494835/197230358-48047392-e3ea-4073-b3f9-22c2d3b53646.mp4
-
 ## APIs' capabilities
 
 ### Face detection
