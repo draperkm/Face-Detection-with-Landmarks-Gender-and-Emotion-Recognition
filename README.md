@@ -21,8 +21,7 @@ Furthmore, face-api.js implements an optimized Tiny Face Detector, basically an 
 The networks return the bounding boxes of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
 
 
-<img width="400" alt="Screenshot 2022-10-22 at 15 41 23" src="https://user-images.githubusercontent.com/80494835/197345637-ca5195f0-dbd0-45b3-a9a1-9e8572795712.png"><img width="400" alt="Screenshot 2022-10-22 at 15 55 19" src="https://user-images.githubusercontent.com/80494835/197346023-271eb8e9-f4fe-4cee-b042-b4de104c8d58.png">
-
+<img width="400" alt="Screenshot 2022-10-22 at 15 41 23" src="https://user-images.githubusercontent.com/80494835/197345637-ca5195f0-dbd0-45b3-a9a1-9e8572795712.png">
 
 ### Face Landmarks
 
