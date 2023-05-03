@@ -10,6 +10,8 @@ I aimed at implementing JavaScript's API `face-api.js` in the browser. This API 
 
 ## APIs' capabilities
 
+[Try it!](https://draperkm-face-detection-app.netlify.app/)
+
 ### Face detection
 
 The most accurate face detector is a **SSD (Single Shot Multibox Detector)**, which is basically a CNN based on **MobileNet V1**, with some additional box prediction layers stacked on top of the network. Furthmore, face-api.js implements an optimized **Tiny Face Detector**, basically an even tinier version of **Tiny Yolo v2** utilizing depthwise seperable convolutions instead of regular convolutions, which is a much faster, but slightly less accurate face detector compared to SSD MobileNet V1. The networks return the **bounding boxes** of each face, with their corresponding scores, e.g. the probability of each bounding box showing a face. 
