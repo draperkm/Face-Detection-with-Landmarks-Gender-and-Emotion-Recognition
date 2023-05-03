@@ -1,4 +1,4 @@
-# Face Detection with Landmarks and Emotion Recognition  [Try it!](https://draperkm-face-detection-app.netlify.app/)
+# Face Detection with Landmarks and Emotion Recognition --> [Try it!](https://draperkm-face-detection-app.netlify.app/)
 
 I aimed at implementing JavaScript's API `face-api.js` in the browser. This API is able to `Detect` (ability to distinguish an object from the background) human faces. It is also able to do `Recognition` (ability to classify the object class such as face landmarks, human emotions, gender and age.
 
